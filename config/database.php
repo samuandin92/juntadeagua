@@ -56,11 +56,11 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'ec2-23-21-246-25.compute-1.amazonaws.com'),
             'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'juntadeagua_santalucia'),
-            'username' => env('DB_USERNAME', 'postgres'),
-            'password' => env('DB_PASSWORD', 'password1'),
+            'database' => env('DB_DATABASE', 'dbtm3bk37nc78i'),
+            'username' => env('DB_USERNAME', 'ktixyoanhlutqt'),
+            'password' => env('DB_PASSWORD', '16a86bfe4f4a22620c1c4d4c6ad86218da3ce89c279ca112ae5502a4b31921de'),
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
