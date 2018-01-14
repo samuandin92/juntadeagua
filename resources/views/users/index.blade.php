@@ -2,7 +2,11 @@
 
 @section('content')
     <h1>Usuarios</h1>
+    <p>Escriba el elemento que desea buscar:</p>  
+    <input class="form-control" id="myInput" type="text" placeholder="Buscar..">
+    <br>
     <table class="table table-striped table-bordered table-hover table-condensed">
+        <thead>                
             <tr>
                 <th>Numero de Abonado</th>
                 <th>Nombre</th> 
@@ -17,6 +21,8 @@
                 <th>Editar</th>
                 <th>Eliminar</th>
             </tr>
+        <thead>
+        <tbody id="myTable">
         @if(count($Users) > 0)
             @foreach($Users as $user)           
                 <tr>
@@ -40,5 +46,17 @@
         @else
             <p>No hay usuarios registrados</p> 
         @endif
+        </tbody>
     </table>
+
+    <script>
+    $(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+    });
+    </script>
 @endsection
