@@ -4,7 +4,7 @@
     <h1>Crear Usuario</h1>
     {!! Form::open(['action' => 'UsersController@store', 'method' => 'POST']) !!}
         <div class="form-group">
-            {{Form::label('noabonado', 'Numero Abonado')}}
+            {{Form::label('noabonado', 'Número Abonado')}}
             {{Form::text('noabonado', '', ['class' => 'form-control', 'placeholder' => 'Numero de Abonado'])}}
             <br>
             {{Form::label('nombre', 'Nombre')}}
@@ -13,10 +13,10 @@
             {{Form::label('apellido', 'Apellido')}}
             {{Form::text('apellido', '', ['class' => 'form-control', 'placeholder' => 'Apellido'])}}
             <br>
-            {{Form::label('noidentidad', 'Numero de Identidad')}}
+            {{Form::label('noidentidad', 'Número de Identidad')}}
             {{Form::text('noidentidad', '', ['class' => 'form-control', 'placeholder' => 'Numero de Identidad'])}}
             <br>
-            {{Form::label('telefono', 'Telefono')}}
+            {{Form::label('telefono', 'Teléfono')}}
             {{Form::text('telefono', '', ['class' => 'form-control', 'placeholder' => 'Telefono'])}}
             <br>
             {{Form::label('tarifa', 'Tarifa')}}

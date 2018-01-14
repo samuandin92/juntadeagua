@@ -4,7 +4,7 @@
     <h1>Editar Usuario</h1>
     {!! Form::open(['action' => ['UsersController@update', $Users->id], 'method' => 'POST']) !!}
         <div class="form-group">
-            {{Form::label('noabonado', 'Numero Abonado')}}
+            {{Form::label('noabonado', 'Número Abonado')}}
             {{Form::text('noabonado', $Users->noabonado, ['class' => 'form-control', 'placeholder' => 'Numero de Abonado'])}}
             <br>
             {{Form::label('nombre', 'Nombre')}}
@@ -13,10 +13,10 @@
             {{Form::label('apellido', 'Apellido')}}
             {{Form::text('apellido', $Users->apellido, ['class' => 'form-control', 'placeholder' => 'Apellido'])}}
             <br>
-            {{Form::label('noidentidad', 'Numero de Identidad')}}
+            {{Form::label('noidentidad', 'Número de Identidad')}}
             {{Form::text('noidentidad', $Users->noidentidad, ['class' => 'form-control', 'placeholder' => 'Numero de Identidad'])}}
             <br>
-            {{Form::label('telefono', 'Telefono')}}
+            {{Form::label('telefono', 'Teléfono')}}
             {{Form::text('telefono', $Users->telefono, ['class' => 'form-control', 'placeholder' => 'Telefono'])}}
             <br>
             {{Form::label('tarifa', 'Tarifa')}}
